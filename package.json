@@ -4,7 +4,9 @@
   "description": "smart address book",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "compile" : "truffle.cmd compile"
   },
   "repository": {
     "type": "git",
