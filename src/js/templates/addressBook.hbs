@@ -1,0 +1,24 @@
+<header class="my-5">
+  <h3 id="page-header">Address Book</h3>
+</header>
+<div class="row">
+{{#each entities}}
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card">
+      <img class="card-img-top p-2" src="http://localhost:8080/ipfs/{{image}}" alt="">
+      <div class="card-body">
+        <h5 class="card-title" id="title">{{firstname}} {{surname}}</h5>
+        <ul class="list-unstyled pl-3">
+          <li>
+            <strong>Spitzname:</strong>{{nickname}}</li>
+          <li>
+            <strong>Addresse:</strong> {{address}}</li>
+          <li>
+            <strong>Hobbies:</strong> {{hobbies}}</li>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+     {{/each}}
+  </div>
